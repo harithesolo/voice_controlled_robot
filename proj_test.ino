@@ -58,9 +58,6 @@ float calc_dist()
   digitalWrite(TRIGGER_PIN, LOW);
   duration = pulseIn (ECHO_PIN, HIGH);
   distance = (duration / 2.0) / 29.0;
-  /*Serial.print("Data:");
-  Serial.print (duration);
-  Serial.print(", d = ");*/
   Serial.print(distance);
   Serial.println(" cm");
   return distance;
